@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GE2IS - Accueil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease-in-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-800 font-sans">
+
+    <header class="absolute top-0 w-full z-30 bg-transparent text-white px-6 py-4">
+        <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <img src="images/svgs/Logo.svg" alt="GE2IS Logo" class="w-10 h-10 rounded-full">
+                <span class="font-bold text-white text-5xl">GE2IS</span>
+            </div>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-6 text-sm text-white font-medium">
+                <a href="#apropos" class="hover:text-green-600">À propos</a>
+                <a href="#vision" class="hover:text-green-600">Notre Vision</a>
+                <a href="#valeurs" class="hover:text-green-600">Nos Valeurs</a>
+                <a href="#metiers" class="hover:text-green-600">Nos métiers</a>
+                <a href="#produits" class="hover:text-green-600">Nos produits</a>
+                <a href="#contact" class="hover:text-green-600">Contact</a>
+            </nav>
+
+            <!-- Hamburger Toggle -->
+            <button id="menu-toggle" class="md:hidden text-green-700 focus:outline-none">
+                <!-- Hamburger icon -->
+                <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 block" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <!-- Close icon -->
+                <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 hidden" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="absolute top-full left-0 w-full bg-white shadow-md py-4 hidden flex-col z-40">
+            <a href="#apropos" class="block py-2 px-6 hover:bg-green-100">À propos</a>
+            <a href="#vision" class="block py-2 px-6 hover:bg-green-100">Notre Vision</a>
+            <a href="#valeurs" class="block py-2 px-6 hover:bg-green-100">Nos Valeurs</a>
+            <a href="#metiers" class="block py-2 px-6 hover:bg-green-100">Nos métiers</a>
+            <a href="#produits" class="block py-2 px-6 hover:bg-green-100">Nos produits</a>
+            <a href="#contact" class="block py-2 px-6 hover:bg-green-100">Contact</a>
+        </div>
+
+        <!-- Backdrop -->
+        <div id="backdrop" class="fixed inset-0 bg-black/50 z-30 hidden"></div>
+    </header>
+
+
+
+    <!-- Hero Slider -->
+    <section class="relative h-screen w-full swiper mySwiper">
+        <div class="swiper-wrapper">
+
+            <!-- Slide -->
+            <div class="swiper-slide h-screen bg-cover bg-center relative"
+                style="background-image: url('images/slide-1.jpg');">
+                <div class="absolute inset-0 bg-black/30"></div>
+                <div class="absolute inset-0 flex flex-col justify-center items-start px-10 md:px-24 z-10">
+                    <h1 class="text-white text-4xl md:text-5xl font-bold mb-6">Bâtissons<br>un avenir durable</h1>
+                </div>
+
+                <!-- Scroll Indicator -->
+                <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-10">
+                    <div class="w-6 h-10 border-2 border-white rounded-full flex justify-center items-start p-1">
+                        <div class="w-1 h-2 bg-white animate-bounce rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide h-screen bg-cover bg-center relative"
+                style="background-image: url('images/slide-2.jpg');">
+                <div class="absolute inset-0 bg-black/30"></div>
+                <div class="absolute inset-0 flex flex-col justify-center items-start px-10 md:px-24 z-10">
+                    <h1 class="text-white text-4xl md:text-5xl font-bold mb-6">Bâtissons<br>un avenir durable</h1>
+                </div>
+
+                <!-- Scroll Indicator -->
+                <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-10">
+                    <div class="w-6 h-10 border-2 border-white rounded-full flex justify-center items-start p-1">
+                        <div class="w-1 h-2 bg-white animate-bounce rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide h-screen bg-cover bg-center relative"
+                style="background-image: url('images/slide-3.jpg');">
+                <div class="absolute inset-0 bg-black/30"></div>
+                <div class="absolute inset-0 flex flex-col justify-center items-start px-10 md:px-24 z-10">
+                    <h1 class="text-white text-4xl md:text-5xl font-bold mb-6">Bâtissons<br>un avenir durable</h1>
+                </div>
+
+                <!-- Scroll Indicator -->
+                <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-10">
+                    <div class="w-6 h-10 border-2 border-white rounded-full flex justify-center items-start p-1">
+                        <div class="w-1 h-2 bg-white animate-bounce rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Slider arrows -->
+        <div class="swiper-button-prev !text-white"></div>
+        <div class="swiper-button-next !text-white"></div>
+        <!-- Bottom CTA -->
+        <div
+            class="absolute bottom-0 w-full flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x bg-white z-10">
+            <a href="#produits"
+                class="w-full md:w-1/2 flex items-center px-6 py-4 bg-green-700 hover:bg-green-800 text-white">
+                <img src="stove-icon.svg" alt="Stove Icon" class="w-6 h-6 mr-4">
+                <div>
+                    <p class="font-bold">Un projet de cuisson éco-responsable ?</p>
+                    <p class="text-sm">Voir nos produits →</p>
+                </div>
+            </a>
+            <a href="#contact"
+                class="w-full md:w-1/2 flex items-center px-6 py-4 bg-green-300 hover:bg-green-400 text-green-900">
+                <img src="contact-icon.svg" alt="Contact Icon" class="w-6 h-6 mr-4">
+                <div>
+                    <p class="font-bold">Vous avez des questions ou un projet en tête ?</p>
+                    <p class="text-sm">Nous contacter →</p>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section id="apropos" class="bg-white py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold text-green-700 text-center mb-10">À propos</h2>
+          
+          <!-- Intro text -->
+          <p class="text-gray-700 text-lg leading-relaxed text-justify mb-10">
+            GE2IS est une société nouvellement créée spécialisée dans le développement de produits industriels en liaison directe avec les énergies renouvelables et la préservation de l’environnement. Elle a pour objet social d’effectuer tant pour elle-même que pour le compte de tiers au Maroc et à l’étranger, les opérations suivantes :
+          </p>
+      
+          <!-- Bullet list in two columns -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-gray-700">
+            <ul class="space-y-4 list-disc list-inside">
+              <li>Le développement et la commercialisation de produits industriels à usage écologique.</li>
+              <li>La valorisation industrielle des déchets et le développement de biomatériaux et carburants renouvelables.</li>
+              <li>La recherche scientifique appliquée dans les domaines de la chimie verte, des procédés durables et de l’économie circulaire.</li>
+              <li>La réduction des émissions de gaz à effet de serre et le développement de solutions à faible émission de CO₂.</li>
+            </ul>
+            <ul class="space-y-4 list-disc list-inside">
+              <li>La collaboration avec des entreprises à l’élaboration de procédés de transformation et de valorisation énergétique.</li>
+              <li>Le développement de solutions technologiques innovantes en lien avec la transition énergétique.</li>
+              <li>La commercialisation d’équipements industriels liés à la cuisson éco-responsable et aux énergies renouvelables.</li>
+              <li>La sensibilisation et la formation dans les domaines de la durabilité et des technologies vertes.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        new Swiper(".mySwiper", {
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+        });
+
+        const toggleBtn = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const backdrop = document.getElementById('backdrop');
+        const iconOpen = document.getElementById('icon-open');
+        const iconClose = document.getElementById('icon-close');
+
+        toggleBtn.addEventListener('click', () => {
+            const isOpen = !mobileMenu.classList.contains('hidden');
+
+            mobileMenu.classList.toggle('hidden');
+            backdrop.classList.toggle('hidden');
+            iconOpen.classList.toggle('hidden');
+            iconClose.classList.toggle('hidden');
+        });
+
+        backdrop.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            backdrop.classList.add('hidden');
+            iconOpen.classList.remove('hidden');
+            iconClose.classList.add('hidden');
+        });
+
+
+    </script>
+</body>
+
+</html>
