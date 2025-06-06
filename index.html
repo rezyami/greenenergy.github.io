@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GE2IS - Accueil</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="src/output.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <style>
         html {
@@ -155,31 +155,93 @@
     </section>
     <section id="apropos" class="bg-white py-20 px-6">
         <div class="max-w-6xl mx-auto">
-          <h2 class="text-3xl md:text-4xl font-bold text-green-700 text-center mb-10">À propos</h2>
-          
-          <!-- Intro text -->
-          <p class="text-gray-700 text-lg leading-relaxed text-justify mb-10">
-            GE2IS est une société nouvellement créée spécialisée dans le développement de produits industriels en liaison directe avec les énergies renouvelables et la préservation de l’environnement. Elle a pour objet social d’effectuer tant pour elle-même que pour le compte de tiers au Maroc et à l’étranger, les opérations suivantes :
-          </p>
-      
-          <!-- Bullet list in two columns -->
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-gray-700">
-            <ul class="space-y-4 list-disc list-inside">
-              <li>Le développement et la commercialisation de produits industriels à usage écologique.</li>
-              <li>La valorisation industrielle des déchets et le développement de biomatériaux et carburants renouvelables.</li>
-              <li>La recherche scientifique appliquée dans les domaines de la chimie verte, des procédés durables et de l’économie circulaire.</li>
-              <li>La réduction des émissions de gaz à effet de serre et le développement de solutions à faible émission de CO₂.</li>
-            </ul>
-            <ul class="space-y-4 list-disc list-inside">
-              <li>La collaboration avec des entreprises à l’élaboration de procédés de transformation et de valorisation énergétique.</li>
-              <li>Le développement de solutions technologiques innovantes en lien avec la transition énergétique.</li>
-              <li>La commercialisation d’équipements industriels liés à la cuisson éco-responsable et aux énergies renouvelables.</li>
-              <li>La sensibilisation et la formation dans les domaines de la durabilité et des technologies vertes.</li>
-            </ul>
-          </div>
+            <h2 class="text-3xl md:text-4xl font-bold text-green-700 text-center mb-10">À propos</h2>
+
+            <!-- Intro text -->
+            <p class="text-gray-700 text-lg leading-relaxed text-justify mb-10">
+                GE2IS est une société nouvellement créée spécialisée dans le développement de produits industriels en
+                liaison directe avec les énergies renouvelables et la préservation de l’environnement. Elle a pour objet
+                social d’effectuer tant pour elle-même que pour le compte de tiers au Maroc et à l’étranger, les
+                opérations suivantes :
+            </p>
+
+            <!-- Bullet list in two columns -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-gray-700">
+                <ul class="space-y-4 list-disc list-inside">
+                    <li>Le développement et la commercialisation de produits industriels à usage écologique.</li>
+                    <li>La valorisation industrielle des déchets et le développement de biomatériaux et carburants
+                        renouvelables.</li>
+                    <li>La recherche scientifique appliquée dans les domaines de la chimie verte, des procédés durables
+                        et de l’économie circulaire.</li>
+                    <li>La réduction des émissions de gaz à effet de serre et le développement de solutions à faible
+                        émission de CO₂.</li>
+                </ul>
+                <ul class="space-y-4 list-disc list-inside">
+                    <li>La collaboration avec des entreprises à l’élaboration de procédés de transformation et de
+                        valorisation énergétique.</li>
+                    <li>Le développement de solutions technologiques innovantes en lien avec la transition énergétique.
+                    </li>
+                    <li>La commercialisation d’équipements industriels liés à la cuisson éco-responsable et aux énergies
+                        renouvelables.</li>
+                    <li>La sensibilisation et la formation dans les domaines de la durabilité et des technologies
+                        vertes.</li>
+                </ul>
+            </div>
         </div>
-      </section>
-      
+    </section>
+
+    <section id="vision" class="py-20 bg-gray-50 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-green-700 text-center mb-10">Notre vision</h2>
+
+            <!-- Image Grid -->
+            <!-- Swiper Image Carousel -->
+            <div class="swiper visionSwiper mb-12">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide w-4/5">
+                        <img src="images/89564e852c18392c4d8668c3130c6aeb14e84d82.jpg" alt="Agriculture"
+                            class="object-cover  h-96 rounded" loading="lazy">
+                        <div class="flex items-start gap-4">
+                            <div class="text-green-700 font-bold text-3xl self-start"><img src="images/02.jpg" alt="">
+                            </div>
+                            <p class="w-2/5 text-gray-700 font-semibold text-lg self-end">
+                                Bâtir pour nos clients un Mix-Énergétique adapté à leurs besoins (Biomasse et
+                                Photo-voltaïque)
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <img src="images/1f538e6ea81a38302991cd5c321aeb55b0381113.jpg" alt="Noix"
+                            class="object-cover w-full h-96 rounded" loading="lazy">
+                        <div class="flex items-start gap-4">
+                            <div class="text-green-700 font-bold text-3xl">02</div>
+                            <p class="w-2/5 text-gray-700 font-semibold text-lg">
+                                Encourager une transition vers une production durable et responsable de l’énergie au
+                                niveau
+                                local et industriel
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Optional navigation -->
+                <div class="swiper-pagination mt-4 flex gap-2.5 items-center"></div>
+            </div>
+
+            <!-- Custom progress pagination -->
+            <div class="flex gap-2.5 items-center">
+                <div class="w-24 bg-lime-400 h-4 relative overflow-hidden"></div>
+                <div class="w-64 h-1.5 bg-[#2d4853] relative overflow-hidden"></div>
+            </div>
+
+            <!-- Callouts -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            </div>
+        </div>
+    </section>
+
+
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -214,7 +276,26 @@
             iconClose.classList.add('hidden');
         });
 
+        new Swiper(".visionSwiper", {
+            slidesPerView: 2,
+            spaceBetween: 10,
+            loop: true,
+            autoplay: {
+                delay: 10000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                640: { slidesPerView: 1 }
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return `<span class="${className} w-24 bg-lime-400 h-4 relative overflow-hidden rounded-none"></span>`;
+                }
+            },
 
+        });
     </script>
 </body>
 

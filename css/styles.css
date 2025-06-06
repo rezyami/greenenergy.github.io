@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.swiper-pagination-bullet-active {
+    @apply bg-green-600 scale-110 opacity-100;
+  }
