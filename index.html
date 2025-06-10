@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GE2IS - Accueil</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="src/output.css">
     <link rel="stylesheet" href="build.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
         .fade-in {
             opacity: 0;
             transform: translateY(20px);
@@ -26,18 +27,18 @@
     </style>
 </head>
 
-<body class="bg-white text-gray-800 font-sans">
+<body class="bg-white text-gray-800 Montserrat">
 
-    <header class="absolute top-0 w-full z-30 bg-transparent text-white px-6 py-4">
+    <header class="absolute top-0 w-full z-30 bg-transparent text-white px-6">
         <div class="flex items-center justify-between">
             <!-- Logo -->
             <div class="flex items-center space-x-2">
-                <img src="images/svgs/Logo.svg" alt="GE2IS Logo" class="w-10 h-10 rounded-full">
+                <img src="images/svgs/Logo.svg" alt="GE2IS Logo" class="bg-white w-32 h-auto rounded-b-4xl">
                 <span class="font-bold text-white text-5xl">GE2IS</span>
             </div>
 
             <!-- Desktop Nav -->
-            <nav class="hidden md:flex space-x-6 text-sm text-white font-medium">
+            <nav class="hidden md:flex space-x-6 text-lg text-white font-medium">
                 <a href="#apropos" class="hover:text-green-600">À propos</a>
                 <a href="#vision" class="hover:text-green-600">Notre Vision</a>
                 <a href="#valeurs" class="hover:text-green-600">Nos Valeurs</a>
@@ -131,32 +132,36 @@
         </div>
 
         <!-- Slider arrows -->
-        <div class="swiper-button-prev !text-white"></div>
-        <div class="swiper-button-next !text-white"></div>
+        <div class="swiper-button-prev !text-white rounded-full border-2 size-32 text-3xl p-6">
+            <i class="fa-solid fa-arrow-left"></i>
+        </div>
+        <div class="swiper-button-next !text-white rounded-full border-2 size-32 text-3xl p-6">
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
         <!-- Bottom CTA -->
         <div
-            class="absolute bottom-0 w-full flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x bg-white z-10">
+            class="absolute bottom-0 right-0 flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x bg-white z-10 w-2/3">
             <a href="#produits"
                 class="w-full md:w-1/2 flex items-center px-6 py-4 bg-green-700 hover:bg-green-800 text-white">
-                <img src="stove-icon.svg" alt="Stove Icon" class="w-6 h-6 mr-4">
-                <div>
+                <img src="images/svgs/cuisson.svg" alt="Stove Icon" class="size-24 mr-4">
+                <div class="text-2xl">
                     <p class="font-bold">Un projet de cuisson éco-responsable ?</p>
                     <p class="text-sm">Voir nos produits →</p>
                 </div>
             </a>
             <a href="#contact"
-                class="w-full md:w-1/2 flex items-center px-6 py-4 bg-green-300 hover:bg-green-400 text-green-900">
-                <img src="contact-icon.svg" alt="Contact Icon" class="w-6 h-6 mr-4">
-                <div>
+                class="w-full md:w-1/2 flex items-center px-6 py-4 bg-green-300 hover:bg-green-400 text-white">
+                <img src="images/svgs/contact.svg" alt="Contact Icon" class="size-24 mr-4">
+                <div class="text-2xl">
                     <p class="font-bold">Vous avez des questions ou un projet en tête ?</p>
-                    <p class="text-sm">Nous contacter →</p>
+                    <p class="text-sm">Nous contacter ></p>
                 </div>
             </a>
         </div>
     </section>
     <section id="apropos" class="bg-white py-20 px-6">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold text-green-700 text-center mb-10">À propos</h2>
+            <h2 class="text-3xl font-semibold text-green-700 mb-16">À propos</h2>
 
             <!-- Intro text -->
             <p class="text-gray-700 text-lg leading-relaxed text-justify mb-10">
@@ -193,7 +198,7 @@
 
     <section id="vision" class="py-20 bg-gray-50 px-6">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold text-green-700 text-center mb-10">Notre vision</h2>
+            <h2 class="text-3xl font-semibold text-green-700 mb-16">Notre vision</h2>
 
             <!-- Image Grid -->
             <!-- Swiper Image Carousel -->
@@ -244,86 +249,155 @@
 
     <section id="valeurs" class="py-20 px-6 bg-white">
         <div class="max-w-6xl mx-auto text-center">
-          <h2 class="text-3xl md:text-4xl font-bold text-green-700 mb-12">Nos Valeurs</h2>
-      
-          <!-- Value Blocks -->
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-gray-700">
-            
-            <!-- Value 1 -->
-            <div class="flex flex-col items-center px-4">
-              <img src="icon1.svg" alt="Respect de l’environnement" class="w-16 h-16 mb-4">
-              <h3 class="text-lg font-semibold mb-2">Respect de l’environnement</h3>
-              <p class="text-sm leading-relaxed">Nous intégrons des solutions écologiques dans chaque étape de notre production.</p>
-            </div>
-            
-            <!-- Value 2 -->
-            <div class="flex flex-col items-center px-4">
-              <img src="icon2.svg" alt="Innovation industrielle" class="w-16 h-16 mb-4">
-              <h3 class="text-lg font-semibold mb-2">Innovation industrielle</h3>
-              <p class="text-sm leading-relaxed">Conception de nouveaux modèles industriels axés sur la durabilité et la réduction des émissions CO₂.</p>
-            </div>
-            
-            <!-- Value 3 -->
-            <div class="flex flex-col items-center px-4">
-              <img src="icon3.svg" alt="Économie circulaire" class="w-16 h-16 mb-4">
-              <h3 class="text-lg font-semibold mb-2">Économie circulaire</h3>
-              <p class="text-sm leading-relaxed">Initier le tri et la valorisation des déchets pour favoriser le recyclage.</p>
-            </div>
-      
-          </div>
-        </div>
-      </section>
+            <h2 class="text-3xl text-left font-semibold text-green-700 mb-16">Nos Valeurs</h2>
 
-      <section id="metiers" class="py-20 px-6 bg-[#f4fdfa]">
+            <!-- Value Blocks -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-gray-700 ms-64 w-4/5">
+
+                <!-- Value 1 -->
+                <div class="flex flex-col items-start px-4">
+                    <img src="images/svgs/earth.svg" alt="Respect de l’environnement" class="size-24 mb-4">
+                    <p class="text-sm leading-relaxed text-left">Imaginer des solutions Circulaires inspirées des meilleures pratiques au niveau de l’économie Durable
+                    </br> <span class="font-bold">0 déchet 0 émission CO2</span></p>
+                </div>
+
+                <!-- Value 2 -->
+                <div class="flex flex-col items-start px-4">
+                    <img src="images/svgs/cloud.svg" alt="Innovation industrielle" class="size-24 mb-4">
+                    <p class="text-sm leading-relaxed text-left">Concevoir des équipements industriels avec une longue durée de vie </p>
+                </div>
+
+                <!-- Value 3 -->
+                <div class="flex flex-col items-start px-4">
+                    <img src="images/svgs/recycle.svg" alt="Économie circulaire" class="size-24 mb-4">
+                    <p class="text-sm leading-relaxed text-left">Intégrer le bien-être des communautés de nos clients et préserver l’environnement <span class="font-bold">Valorisation des déchets et leur recyclage</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="metiers" class="py-20 px-6 bg-[#f4fdfa]">
         <div class="max-w-6xl mx-auto">
-          <h2 class="text-3xl md:text-4xl font-bold text-green-700 mb-10">Nos métiers</h2>
-      
-          <!-- Image Grid Layout -->
-          <div class="flex flex-col gap-6">
-            
-            <!-- Left Column (2 rows) -->
-            <div class="flex w-full gap-6 max-h-[350px]">
-              <img src="images/metier1.jpg" alt="Unité industrielle" class="w-2/3 max-w-[710px] h-auto rounded shadow-md">
-              <img src="images/metier2.jpg" alt="Four à bois" class="w-1/3 h-auto rounded shadow-md">
-            </div>
-      
-            <!-- Right Column (2 rows) -->
-            <div class="flex w-full gap-6 max-h-[350px]">
-              <img src="images/metier3.png" alt="Foyer à bois moderne" class="w-1/3 h-auto rounded shadow-md">
-              <img src="images/metier4.jpg" alt="Partenariat & services" class="w-2/3 max-w-[710px] h-auto rounded shadow-md">
-            </div>
-      
-          </div>
-        </div>
-      </section>
+            <h2 class="text-3xl font-semibold text-green-700 mb-16">Nos métiers</h2>
 
-      <section id="produits" class="py-20 px-6 bg-white">
+            <!-- Image Grid Layout -->
+            <div class="flex flex-col gap-6">
+
+                <!-- Left Column (2 rows) -->
+                <div class="flex w-full gap-6 max-h-[350px]">
+                    <img src="images/metier1.jpg" alt="Unité industrielle"
+                        class="w-2/3 max-w-[710px] h-auto rounded shadow-md">
+                    <img src="images/metier2.jpg" alt="Four à bois" class="w-1/3 h-auto rounded shadow-md">
+                </div>
+
+                <!-- Right Column (2 rows) -->
+                <div class="flex w-full gap-6 max-h-[350px]">
+                    <img src="images/metier3.png" alt="Foyer à bois moderne" class="w-1/3 h-auto rounded shadow-md">
+                    <img src="images/metier4.jpg" alt="Partenariat & services"
+                        class="w-2/3 max-w-[710px] h-auto rounded shadow-md">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="produits" class="py-20 px-6 bg-white">
         <div class="max-w-6xl mx-auto">
-          <!-- Title -->
-          <h2 class="text-3xl md:text-4xl font-bold text-green-700 mb-12">Nos produits</h2>
-      
-          <!-- Image row -->
-          <div class="flex flex-col md:flex-row items-center justify-center gap-8">
-            
-            <!-- Product 1 -->
-            <div class="bg-[#F1F8F4] p-4 hover:shadow-md w-96 flex justify-center align-center h-64">
-              <img src="images/produit-1.png" alt="Cuiseur écologique" class="w-full max-w-xs h-auto object-contain">
+            <!-- Title -->
+            <h2 class="text-3xl font-semibold text-green-700 mb-16">Nos produits</h2>
+
+            <!-- Image row -->
+            <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+
+                <!-- Product 1 -->
+                <div class="bg-[#F1F8F4] p-4 hover:shadow-md w-96 flex justify-center align-center h-64">
+                    <img src="images/produit-1.png" alt="Cuiseur écologique"
+                        class="w-full max-w-xs h-auto object-contain">
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bg-[#F1F8F4] p-4 hover:shadow-md w-96 flex justify-center align-center h-64">
+                    <img src="images/produit-2.png" alt="Kit biogaz toilette"
+                        class="w-full max-w-xs h-auto object-contain">
+                </div>
+
             </div>
-      
-            <!-- Product 2 -->
-            <div class="bg-[#F1F8F4] p-4 hover:shadow-md w-96 flex justify-center align-center h-64">
-              <img src="images/produit-2.png" alt="Kit biogaz toilette" class="w-full max-w-xs h-auto object-contain">
-            </div>
-      
-          </div>
         </div>
-      </section>
-      
-      
-      
-      
+    </section>
+
+    <section id="contact" class="py-20 px-6 bg-[#f4fdfa]">
+        <div class="max-w-6xl mx-auto">
+
+            <h2 class="text-3xl font-semibold text-green-700 mb-16">Contact</h2>
+            <div class="centred w-2/3 m-auto">
+                <div class="text-3xl w-full leading-[48px] text-[#2F4858] tracking-wider mb-20">
+                    Une question ou un projet ? Écrivez-nous, notre équipe vous accompagne vers des solutions durables
+                    et
+                    personnalisées.
+                </div>
+                <div class="md:flex md:space-x-12 items-center">
+
+                    <!-- Left: Form -->
+                    <form class="flex-1 space-y-6">
+                        <input type="text" placeholder="Nom complet"
+                            class="w-full border-b border-gray-600 bg-transparent focus:outline-none focus:border-green-600 py-2" />
+
+                        <input type="email" placeholder="Email"
+                            class="w-full border-b border-gray-600 bg-transparent focus:outline-none focus:border-green-600 py-2" />
+
+                        <input type="text" placeholder="Objet"
+                            class="w-full border-b border-gray-600 bg-transparent focus:outline-none focus:border-green-600 py-2" />
+
+                        <textarea placeholder="Message" rows="4"
+                            class="w-full border-b border-gray-600 bg-transparent focus:outline-none focus:border-green-600 py-2 resize-none"></textarea>
+
+                        <button type="submit"
+                            class="mt-2 text-green-800 font-semibold hover:underline focus:outline-none">
+                            Send Message
+                        </button>
+                    </form>
+
+                    <!-- Right: Contact Info -->
+                    <div class="flex-1 mt-12 md:mt-0 text-sm text-gray-700 leading-relaxed">
+                        <p class="mb-4">
+                            Vous pouvez aussi nous joindre directement par téléphone ou par email. Nos coordonnées sont
+                            indiquées ci-dessous.
+                        </p>
+                        <p><strong>Téléphone :</strong> +212 5 37 77 88 99</p>
+                        <p><strong>Email :</strong> dg@ge2is.com</p>
+                        <p><strong>Adresse :</strong> 45, Avenue Al Abtal, Agdal, 10090 Rabat, Maroc</p>
+                    </div>
+                </div>
+            </div>
 
 
+        </div>
+    </section>
+
+    <footer class="bg-[#2d4853] py-10">
+        <div class="max-w-6xl mx-auto text-center">
+
+            <!-- Social Icons -->
+            <div class="flex justify-center items-center space-x-6 mb-4 text-lime-400 text-xl">
+                <a href="#" aria-label="Facebook" class="hover:text-white transition">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" aria-label="Twitter / X" class="hover:text-white transition">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="#" aria-label="Instagram" class="hover:text-white transition">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" aria-label="YouTube" class="hover:text-white transition">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+
+            <!-- Copyright -->
+            <p class="text-sm text-lime-400">&copy; 2025 GE2IS by BAYDECK</p>
+
+        </div>
+    </footer>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
