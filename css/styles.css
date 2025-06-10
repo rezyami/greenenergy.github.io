@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+
+body {
+  font-family: 'montserrat';
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: none !important;
+}
+
 .swiper-pagination-bullet-active {
     @apply bg-green-600 scale-110 opacity-100;
   }
+
+  
