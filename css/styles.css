@@ -4,13 +4,43 @@
 body {
   font-family: 'montserrat';
 }
+
 .swiper-button-prev::after,
 .swiper-button-next::after {
   content: none !important;
 }
+.visionSwiper {
+  padding-bottom: 4rem !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important
+}
+
+.swiper-pagination {
+  bottom: 0 !important;
+}
+
+.swiper-pagination-bullet {
+  width: 280px !important;
+  height: 6px !important;
+  border-radius: 0% !important;
+  background-color: #2d4853 !important;
+  opacity: 0 !important;
+}
 
 .swiper-pagination-bullet-active {
-    @apply bg-green-600 scale-110 opacity-100;
-  }
+  width: 6rem !important;
+  background-color: #9ae600 !important;
+  height: 1rem !important;
+  position: relative !important;
+  overflow: hidden !important;
+  border-radius: 0% !important;
+}
 
-  
+.animation-bounce-up {
+  animation-name: bounceUp;
+  animation-duration: 1s;
+}
+@keyframes bounceUp {
+    0% {transform: 'translateY(100%)'}
+    100% {transform: 'translateY(0%)'}
+  };

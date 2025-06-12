@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GE2IS - Accueil</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="src/output.css">
+    <!-- <link rel="stylesheet" href="build.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body class="bg-white text-gray-800 Montserrat">
+
+    <header class="bg-[#2d4853] px-6">
+        <div class="flex items-center justify-around">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <img src="images/logoGE.png" alt="GE2IS Logo" class="bg-transparent w-32 h-auto absolute top-0">
+                <span class="font-bold text-white text-5xl hidden">GE2IS</span>
+            </div>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-10 text-lg text-white font-medium py-[34px]">
+                <a href="#apropos" class="hover:text-green-600">À propos</a>
+                <a href="#vision" class="hover:text-green-600">Notre Vision</a>
+                <a href="#valeurs" class="hover:text-green-600">Nos Valeurs</a>
+                <a href="#metiers" class="hover:text-green-600">Nos métiers</a>
+                <a href="#produits" class="hover:text-green-600">Nos produits</a>
+                <a href="#contact" class="hover:text-green-600">Contact</a>
+            </nav>
+
+            <!-- Hamburger Toggle -->
+            <button id="menu-toggle" class="md:hidden text-green-700 focus:outline-none">
+                <!-- Hamburger icon -->
+                <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 block" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <!-- Close icon -->
+                <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 hidden" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="absolute top-full left-0 w-full bg-white shadow-md py-4 hidden flex-col z-40">
+            <a href="#apropos" class="block py-2 px-6 hover:bg-green-100">À propos</a>
+            <a href="#vision" class="block py-2 px-6 hover:bg-green-100">Notre Vision</a>
+            <a href="#valeurs" class="block py-2 px-6 hover:bg-green-100">Nos Valeurs</a>
+            <a href="#metiers" class="block py-2 px-6 hover:bg-green-100">Nos métiers</a>
+            <a href="#produits" class="block py-2 px-6 hover:bg-green-100">Nos produits</a>
+            <a href="#contact" class="block py-2 px-6 hover:bg-green-100">Contact</a>
+        </div>
+
+        <!-- Backdrop -->
+        <div id="backdrop" class="fixed inset-0 bg-black/50 z-30 hidden"></div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="h-[160px] py-3 px-6 bg-[url(../images/bg-breadcrumb.jpg)] bg-cover items-center flex">
+        <div class="max-w-6xl mx-auto text-center flex justify-center">
+            <p class="text-white align-center font-semibold text-[18px] leading-[74px] tracking-normal gap-10 flex">
+                <a href="#" class="hover:text-green-600">Accueil</a> /
+                <a href="#produits" class="hover:text-green-600">Produits</a> /
+                <span>Cuisinière à bois Balkan Energy 4014, 7.9kW</span>
+            </p>
+        </div>
+    </div>
+
+    <section class="max-w-[1500px] mx-auto py-8 px-6 bg-white">
+        <div class="mx-auto">
+
+            <!-- Title and Energy Class -->
+            <div class="flex flex-col md:flex-row items-start md:space-x-28 mb-12">
+                <section id="product-gallery" class="py-20 px-6 bg-white md:w-5/12">
+                    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-start">
+
+                        <!-- Thumbnails -->
+                        <div class="space-y-4 md:w-2/12 md:mr-4">
+                            <div class="swiper mySwiper-thumbnails max-w-full">
+                                <div class="swiper-wrapper flex flex-col gap-4">
+                                    <div class="swiper-slide">
+                                        <img src="images/produit-1.png" alt="Cuisinière à bois 1"
+                                            class="w-full h-auto cursor-pointer rounded-lg border border-gray-300 thumbnail"
+                                            data-slide="0">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/product-img.jpg" alt="Cuisinière à bois 2"
+                                            class="w-full h-auto cursor-pointer rounded-lg border border-gray-300 thumbnail"
+                                            data-slide="1">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/product-img 2.png" alt="Cuisinière à bois 3"
+                                            class="w-full h-auto cursor-pointer rounded-lg border border-gray-300 thumbnail"
+                                            data-slide="2">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/product-img 3.jpg" alt="Cuisinière à bois 4"
+                                            class="w-full h-auto cursor-pointer rounded-lg border border-gray-300 thumbnail"
+                                            data-slide="3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Main Image -->
+                        <div class="md:w-10/12">
+                            <div class="swiper mySwiper-main">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="images/produit-1.png" alt="Main Cuisinière Image"
+                                            class="w-full h-auto rounded-lg shadow-md">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/product-img.jpg" alt="Side View Image"
+                                            class="w-full h-auto rounded-lg shadow-md">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/product-img 2.png" alt="Dimensions Image"
+                                            class="w-full h-auto rounded-lg shadow-md">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/product-img 3.jpg" alt="Door View"
+                                            class="w-full h-auto rounded-lg shadow-md">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <div class="w-full md:w-7/12 mt-8 md:mt-0">
+                    <div class="min-h-screen flex py-8">
+                        <div class="w-full max-w-3xl text-left">
+
+                            <!-- Header Section -->
+                            <h1 class="text-[#2F4858] font-extrabold text-[28px] leading-[42px] tracking-normal mb-4 border-b border-gray-200 pb-6">
+                                Cuisinière à bois Balkan Energy 4014, 7.9kW</h1>
+                            <p class="text-[#2F4858] font-semibold mb-4">Cuisinière à bois avec grand four</p>
+
+                            <!-- Product Details -->
+                            <div class="grid grid-cols-1 gap-12">
+
+                                <!--  Column (Energy Class, Heating Area) -->
+                                <div class="flex gap-10">
+                                    <div class="flex">
+                                        <img src="images/energy-class-icon-1-50x50 1.png"  class="size-12" alt="">
+                                        <div>
+                                            <span class="ml-2 text-xsfont-semibold text-[14px] leading-[29px] tracking-normal text-[#C2C2C2] text-nowrap">Classe d'efficacité énergétique</span>
+                                            <img src="images/energyClass.png" alt="">
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="flex items-center">
+                                        <img src="images/mSquare.png" class="size-12 me-4" alt="">
+                                        <div class="flex flex-col">
+                                            <span class="ml-2 text-xsfont-semibold text-[14px] leading-[29px] tracking-normal text-[#C2C2C2] text-nowrap">Surface de chauffage approximative (m²)</span>
+                                            <span class="text-xl font-bold text-[#009960]">30 à 50</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Right Column (Product Features) -->
+                                <div class="space-y-4">
+                                    <h2 class="text-2xl font-semibold text-gray-800">Détails du produit</h2>
+                                    <ul class="list-disc pl-6 space-y-2 text-gray-700">
+                                        <li>Corps en tôle d'acier</li>
+                                        <li>Chambre de combustion doublée de briques réfractaires qui accumulent la chaleur et augmentent la température de combustion;</li>
+                                        <li>Grille en fonte</li>
+                                        <li>Amortisseur avant pour contrôler l'alimentation en air</li>
+                                        <li>Volet d'air secondaire qui augmente la température de combustion,
+                                            l'efficacité et empêche la fumigation de la vitre</li>
+                                        <li>Vitre en verre trempé du four</li>
+                                        <li>Poignées de porte en métal</li>
+                                    </ul>
+
+                                    <p class="mb-4">L'obtention de la puissance calorifique souhaitée dépend de :</p>
+                                    <ul class="list-disc pl-6 space-y-2 text-gray-700">
+                                        
+                                        <li>Le carburant sélectionné ainsi que la caloricité et l'humidité nécessaires
+                                        </li>
+                                        <li>son allumage et son ravitaillement ultérieurs;</li>
+                                        <li>la régulation de l'air primaire et de l'air secondaire;</li>
+                                        <li>la réglementation du tirant d'eau;</li>
+                                        <li>l'organisation d'un échange efficace de chaleur de l'air, etc.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="space-y-4">
+                                        <img src="images/Photo1.png" alt="Dimensions du produit"
+                                            class="w-full h-auto rounded-lg shadow-md">
+                                        <img src="images/Photo2.png" alt="Porte du four"
+                                            class="w-full h-auto rounded-lg shadow-md">
+                                        <img src="images/Photo3.png" alt="">
+                                        <img src="images/Photo4.png" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Product Characteristics (Table) -->
+                    <div class="py-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-semibold text-green-700 mb-4">Caractéristiques</h3>
+                        <table class="min-w-full table-auto border-collapse text-gray-700">
+                            <tbody>
+                                <tr class="border-b">
+                                    <td class="px-4 py-3">Poids (kg)</td>
+                                    <td class="px-4 py-3">45.00</td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="px-4 py-3">Profondeur (mm)</td>
+                                    <td class="px-4 py-3">490</td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="px-4 py-3">Largeur (mm)</td>
+                                    <td class="px-4 py-3">835</td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="px-4 py-3">Hauteur (mm)</td>
+                                    <td class="px-4 py-3">700</td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="px-4 py-3">Puissance thermique nominale (kW)</td>
+                                    <td class="px-4 py-3">7.9</td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="px-4 py-3">Classe d’efficacité énergétique</td>
+                                    <td class="px-4 py-3">A+</td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="px-4 py-3">Surface de chauffage approximative (m²)</td>
+                                    <td class="px-4 py-3">30 à 50</td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="px-4 py-3">Conduit (mm)</td>
+                                    <td class="px-4 py-3">150</td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="px-4 py-3">Puissance de sortie de chaleur (kW)</td>
+                                    <td class="px-4 py-3">7.9</td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="px-4 py-3">Efficacité (%)</td>
+                                    <td class="px-4 py-3">81.45</td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="px-4 py-3">Type de chauffage</td>
+                                    <td class="px-4 py-3">Convection naturelle</td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="px-4 py-3">Caractéristiques</td>
+                                    <td class="px-4 py-3">Poêle à bois, Poêle, Four, Pieds</td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="px-4 py-3">Type de chauffage</td>
+                                    <td class="px-4 py-3">Convection naturelle</td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="px-4 py-3">Dimensions du four (H, L et P) en mm</td>
+                                    <td class="px-4 py-3">174x400x415</td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="px-4 py-3">Doublure</td>
+                                    <td class="px-4 py-3">Aucune</td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="px-4 py-3">Placement</td>
+                                    <td class="px-4 py-3">Centre</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <footer class="bg-[#2d4853] py-16">
+        <div class="max-w-6xl mx-auto text-center">
+
+            <!-- Social Icons -->
+            <div class="flex justify-center items-center space-x-20 mb-4 text-lime-400 text-xl">
+                <a href="#" aria-label="Facebook" class="hover:text-white transition">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" aria-label="Twitter / X" class="hover:text-white transition">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="#" aria-label="Instagram" class="hover:text-white transition">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" aria-label="YouTube" class="hover:text-white transition">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+
+            <!-- Copyright -->
+            <p class="text-sm text-lime-400">&copy; 2025 GE2IS by BAYDECK</p>
+
+        </div>
+    </footer>
+
+    <!-- SwiperJS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // Get all thumbnails and main swiper
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        const mainSwiper = new Swiper('.mySwiper-main', {
+            loop: true,
+            slidesPerView: 1,
+        });
+
+        // Event listener to change main image on thumbnail click
+        thumbnails.forEach((thumbnail, index) => {
+            thumbnail.addEventListener('click', () => {
+                mainSwiper.slideTo(index);
+            });
+        });
+
+    </script>
+</body>
+
+</html>

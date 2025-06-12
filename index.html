@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="src/output.css">
     <link rel="stylesheet" href="build.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -30,15 +31,15 @@
 <body class="bg-white text-gray-800 Montserrat">
 
     <header class="absolute top-0 w-full z-30 bg-transparent text-white px-6">
-        <div class="flex items-center justify-between">
+        <div class="flex items-center justify-around">
             <!-- Logo -->
             <div class="flex items-center space-x-2">
-                <img src="images/svgs/Logo.svg" alt="GE2IS Logo" class="bg-white w-32 h-auto rounded-b-4xl">
+                <img src="images/logoGE.png" alt="GE2IS Logo" class="bg-transparent w-32 h-auto">
                 <span class="font-bold text-white text-5xl">GE2IS</span>
             </div>
 
             <!-- Desktop Nav -->
-            <nav class="hidden md:flex space-x-6 text-lg text-white font-medium">
+            <nav class="hidden md:flex space-x-10 text-lg text-white font-medium">
                 <a href="#apropos" class="hover:text-green-600">À propos</a>
                 <a href="#vision" class="hover:text-green-600">Notre Vision</a>
                 <a href="#valeurs" class="hover:text-green-600">Nos Valeurs</a>
@@ -79,92 +80,85 @@
 
 
     <!-- Hero Slider -->
-    <section class="relative h-screen w-full swiper mySwiper">
-        <div class="swiper-wrapper">
+    <section class="relative h-screen w-full">
+        <div class="h-screen w-full swiper mySwiper">
+            <div class="swiper-wrapper">
 
-            <!-- Slide -->
-            <div class="swiper-slide h-screen bg-cover bg-center relative"
-                style="background-image: url('images/slide-1.jpg');">
-                <div class="absolute inset-0 bg-black/30"></div>
-                <div class="absolute inset-0 flex flex-col justify-center items-start px-10 md:px-24 z-10">
-                    <h1 class="text-white text-4xl md:text-5xl font-bold mb-6">Bâtissons<br>un avenir durable</h1>
-                </div>
-
-                <!-- Scroll Indicator -->
-                <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-10">
-                    <div class="w-6 h-10 border-2 border-white rounded-full flex justify-center items-start p-1">
-                        <div class="w-1 h-2 bg-white animate-bounce rounded-full"></div>
+                <!-- Slide -->
+                <div class="swiper-slide h-screen bg-cover bg-center relative"
+                    style="background-image: url('images/slide-1.jpg');">
+                    <div class="absolute inset-0 bg-black/30"></div>
+                    <div class="absolute inset-0 flex flex-col justify-center items-start px-10 md:px-24 z-10">
+                        <h1 class="text-white font-bold text-[70px] leading-[74px] tracking-normal w-96 ml-[300px] mb-6">Bâtissons<br>un avenir durable</h1>
                     </div>
                 </div>
-            </div>
-            <!-- Slide -->
-            <div class="swiper-slide h-screen bg-cover bg-center relative"
-                style="background-image: url('images/slide-2.jpg');">
-                <div class="absolute inset-0 bg-black/30"></div>
-                <div class="absolute inset-0 flex flex-col justify-center items-start px-10 md:px-24 z-10">
-                    <h1 class="text-white text-4xl md:text-5xl font-bold mb-6">Bâtissons<br>un avenir durable</h1>
-                </div>
+                <!-- Slide -->
+                <div class="swiper-slide h-screen bg-cover bg-center relative"
+                    style="background-image: url('images/slide-2.jpg');">
+                    <div class="absolute inset-0 bg-black/30"></div>
+                    <div class="absolute inset-0 flex flex-col justify-center items-start px-10 md:px-24 z-10">
+                        <h1 class="text-white font-bold text-[70px] leading-[74px] tracking-normal w-96 ml-[300px] mb-6">Bâtissons<br>un avenir durable</h1>
+                    </div>
 
-                <!-- Scroll Indicator -->
-                <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-10">
-                    <div class="w-6 h-10 border-2 border-white rounded-full flex justify-center items-start p-1">
-                        <div class="w-1 h-2 bg-white animate-bounce rounded-full"></div>
+                    <!-- Scroll Indicator -->
+                    <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-10">
+                        <div class="w-6 h-10 border-2 border-white rounded-full flex justify-center items-start p-1">
+                            <div class="w-1 h-2 bg-white animate-bounce-up rounded-full"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Slide -->
-            <div class="swiper-slide h-screen bg-cover bg-center relative"
-                style="background-image: url('images/slide-3.jpg');">
-                <div class="absolute inset-0 bg-black/30"></div>
-                <div class="absolute inset-0 flex flex-col justify-center items-start px-10 md:px-24 z-10">
-                    <h1 class="text-white text-4xl md:text-5xl font-bold mb-6">Bâtissons<br>un avenir durable</h1>
-                </div>
-
-                <!-- Scroll Indicator -->
-                <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-10">
-                    <div class="w-6 h-10 border-2 border-white rounded-full flex justify-center items-start p-1">
-                        <div class="w-1 h-2 bg-white animate-bounce rounded-full"></div>
+                <!-- Slide -->
+                <div class="swiper-slide h-screen bg-cover bg-center relative"
+                    style="background-image: url('images/slide-3.jpg');">
+                    <div class="absolute inset-0 bg-black/30"></div>
+                    <div class="absolute inset-0 flex flex-col justify-center items-start px-10 md:px-24 z-10">
+                        <h1 class="text-white font-bold text-[70px] leading-[74px] tracking-normal w-96 ml-[300px] mb-6">Bâtissons<br>un avenir durable</h1>
                     </div>
                 </div>
             </div>
 
-
+            <!-- Slider arrows -->
+            <div class="swiper-button-prev !text-white rounded-full border-2 size-36 text-3xl p-6">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="swiper-button-next !text-white rounded-full border-2 size-32 text-3xl p-6">
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
         </div>
 
-        <!-- Slider arrows -->
-        <div class="swiper-button-prev !text-white rounded-full border-2 size-32 text-3xl p-6">
-            <i class="fa-solid fa-arrow-left"></i>
-        </div>
-        <div class="swiper-button-next !text-white rounded-full border-2 size-32 text-3xl p-6">
-            <i class="fa-solid fa-arrow-right"></i>
-        </div>
         <!-- Bottom CTA -->
+        <!-- Scroll Indicator -->
+        <div class="absolute -bottom-8 left-[23%] transform -translate-x-1/2 z-10 w-[60px] h-[80px] rounded-[30px] bg-white p-[10px]">
+            <div class="w-full h-full rounded-[30px] border-3 border-[#B3D558] flex justify-center items-start p-1">
+                <div class="size-[10px] bg-[#B3D558] animate__animated animate__slideInUp animate__delay-2s animate__infinite rounded-full"></div>
+            </div>
+        </div>
         <div
-            class="absolute bottom-0 right-0 flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x bg-white z-10 w-2/3">
+            class="absolute -bottom-16 right-0 flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x bg-white z-10 w-2/3">
             <a href="#produits"
-                class="w-full md:w-1/2 flex items-center px-6 py-4 bg-green-700 hover:bg-green-800 text-white">
-                <img src="images/svgs/cuisson.svg" alt="Stove Icon" class="size-24 mr-4">
-                <div class="text-2xl">
+                class="w-full md:w-1/2 flex items-center px-9 py-7 bg-[#009960] hover:bg-green-800 text-white">
+                <img src="images/svgs/cuisson.svg" alt="Stove Icon" class="size-24 mr-12">
+                <div class="text-2xl w-3/5">
                     <p class="font-bold">Un projet de cuisson éco-responsable ?</p>
-                    <p class="text-sm">Voir nos produits →</p>
+                    <p class="text-[22px] leading-[72px] flex">Voir nos produits <img src="images/svgs/greater-then.svg" class="ms-4" alt=""></p>
                 </div>
             </a>
             <a href="#contact"
-                class="w-full md:w-1/2 flex items-center px-6 py-4 bg-green-300 hover:bg-green-400 text-white">
-                <img src="images/svgs/contact.svg" alt="Contact Icon" class="size-24 mr-4">
-                <div class="text-2xl">
+                class="w-full md:w-1/2 flex items-center px-9 py-7 bg-[#B3D558] hover:bg-green-400 text-white">
+                <img src="images/svgs/contact.svg" alt="Contact Icon" class="size-24 mr-12">
+                <div class="text-2xl w-3/5">
                     <p class="font-bold">Vous avez des questions ou un projet en tête ?</p>
-                    <p class="text-sm">Nous contacter ></p>
+                    <p class="text-[22px] leading-[72px] flex">Nous contacter <img src="images/svgs/greater-then.svg" class="ms-4" alt=""></p>
                 </div>
             </a>
         </div>
     </section>
-    <section id="apropos" class="bg-white py-20 px-6">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-semibold text-green-700 mb-16">À propos</h2>
+    <section id="apropos" class="bg-white pt-[250px] pb-[100px]">
+        <div class="max-w-[1350px] ms-[350px] flex flex-col">
+            <h2 class="font-bold text-[28px] leading-[74px] tracking-[0.1em] text-green-700 mb-20">À propos</h2>
 
             <!-- Intro text -->
-            <p class="text-gray-700 text-lg leading-relaxed text-justify mb-10">
+            <p class="max-w-6xl text-gray-700 font-semibold text-[28px] leading-[42px] tracking-[0.2em] mb-14 self-end">
                 GE2IS est une société nouvellement créée spécialisée dans le développement de produits industriels en
                 liaison directe avec les énergies renouvelables et la préservation de l’environnement. Elle a pour objet
                 social d’effectuer tant pour elle-même que pour le compte de tiers au Maroc et à l’étranger, les
@@ -172,44 +166,35 @@
             </p>
 
             <!-- Bullet list in two columns -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-gray-700">
-                <ul class="space-y-4 list-disc list-inside">
-                    <li>Le développement et la commercialisation de produits industriels à usage écologique.</li>
-                    <li>La valorisation industrielle des déchets et le développement de biomatériaux et carburants
-                        renouvelables.</li>
-                    <li>La recherche scientifique appliquée dans les domaines de la chimie verte, des procédés durables
-                        et de l’économie circulaire.</li>
-                    <li>La réduction des émissions de gaz à effet de serre et le développement de solutions à faible
-                        émission de CO₂.</li>
+            <div class="max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8 text-gray-700 self-end">
+                <ul class="space-x-6 list-disc list-outside marker:text-[#B3D558]">
+                    <li class="font-normal text-[16px] leading-[29px] tracking-normal mb-6">Le développement et commercialisation de produits et de services industriels.</li>
+                    <li class="font-normal text-[16px] leading-[29px] tracking-normal mb-6">La production, la commercialisation ainsi que la distribution d'équipements et de machines de projets industriels majeurs dans divers secteurs d'activité.</li>
+                    <li class="font-normal text-[16px] leading-[29px] tracking-normal mb-6">La valorisation industrielle des déchets; le développement et l'exploitation de toutes autres activités liées au développement durable en général.</li>
                 </ul>
-                <ul class="space-y-4 list-disc list-inside">
-                    <li>La collaboration avec des entreprises à l’élaboration de procédés de transformation et de
-                        valorisation énergétique.</li>
-                    <li>Le développement de solutions technologiques innovantes en lien avec la transition énergétique.
-                    </li>
-                    <li>La commercialisation d’équipements industriels liés à la cuisson éco-responsable et aux énergies
-                        renouvelables.</li>
-                    <li>La sensibilisation et la formation dans les domaines de la durabilité et des technologies
-                        vertes.</li>
+                <ul class="space-x-6 list-disc list-outside marker:text-[#B3D558]">
+                    <li class="font-normal text-[16px] leading-[29px] tracking-normal mb-6">Toutes prestations de services, d’études, de conseils et au développement économique et social durable aux entreprises, administrations publique, institutions, organisations non gouvernementales et association en matière de gestion de projet.</li>
+                    <li class="font-normal text-[16px] leading-[29px] tracking-normal mb-6">L’Assistance des entreprises à l’élaboration des offres de produits et de services adaptés aux besoins du développement en respectant à la fois les contraintes économiques, les impératifs sociaux et les conditions d’un développement durable.</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <section id="vision" class="py-20 bg-gray-50 px-6">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-semibold text-green-700 mb-16">Notre vision</h2>
+    <section id="vision" class="pt-[105px] pb-[100px] bg-gray-50 px-6">
+        <div class="ms-[330px] flex flex-col">
+            <h2 class="font-bold text-[28px] leading-[74px] tracking-[0.1em] text-green-700 mb-20">Notre vision</h2>
 
             <!-- Image Grid -->
             <!-- Swiper Image Carousel -->
-            <div class="swiper visionSwiper mb-12">
+            <div class="max-w-7xl swiper visionSwiper mb-12 pb-12 self-end">
                 <div class="swiper-wrapper">
                     <!-- Slide 1 -->
-                    <div class="swiper-slide w-4/5">
+                    <div class="swiper-slide">
                         <img src="images/89564e852c18392c4d8668c3130c6aeb14e84d82.jpg" alt="Agriculture"
-                            class="object-cover  h-96 rounded" loading="lazy">
+                            class="object-cover rounded" loading="lazy">
                         <div class="flex items-start gap-4">
-                            <div class="text-green-700 font-bold text-3xl self-start"><img src="images/02.jpg" alt="">
+                            <div class="text-green-700 font-bold text-3xl self-start relative -top-16">
+                                <img src="images/01.png" alt="">
                             </div>
                             <p class="w-2/5 text-gray-700 font-semibold text-lg self-end">
                                 Bâtir pour nos clients un Mix-Énergétique adapté à leurs besoins (Biomasse et
@@ -220,10 +205,13 @@
                     <!-- Slide 2 -->
                     <div class="swiper-slide">
                         <img src="images/1f538e6ea81a38302991cd5c321aeb55b0381113.jpg" alt="Noix"
-                            class="object-cover w-full h-96 rounded" loading="lazy">
+                            class="object-cover rounded" loading="lazy">
                         <div class="flex items-start gap-4">
-                            <div class="text-green-700 font-bold text-3xl">02</div>
-                            <p class="w-2/5 text-gray-700 font-semibold text-lg">
+                            <div class="text-green-700 font-bold text-3xl self-start relative -top-16">
+                                <img src="images/02.png" alt="">
+                            </div>
+                            
+                            <p class="w-2/5 text-gray-700 font-semibold text-lg self-end">
                                 Encourager une transition vers une production durable et responsable de l’énergie au
                                 niveau
                                 local et industriel
@@ -235,53 +223,51 @@
                 <div class="swiper-pagination mt-4 flex gap-2.5 items-center"></div>
             </div>
 
-            <!-- Custom progress pagination -->
-            <div class="flex gap-2.5 items-center">
-                <div class="w-24 bg-lime-400 h-4 relative overflow-hidden"></div>
-                <div class="w-64 h-1.5 bg-[#2d4853] relative overflow-hidden"></div>
-            </div>
-
             <!-- Callouts -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             </div>
         </div>
     </section>
 
-    <section id="valeurs" class="py-20 px-6 bg-white">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-3xl text-left font-semibold text-green-700 mb-16">Nos Valeurs</h2>
+    <section id="valeurs" class="pt-[120px] pb-[120px] bg-white">
+        <div class="max-w-[1350px] ms-[350px] flex flex-col text-center">
+            <h2 class="font-bold text-[28px] leading-[74px] tracking-[0.1em] text-green-700 mb-20 text-left">Nos Valeurs</h2>
 
             <!-- Value Blocks -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-gray-700 ms-64 w-4/5">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-gray-700 max-w-6xl w-6xl self-end">
 
                 <!-- Value 1 -->
                 <div class="flex flex-col items-start px-4">
-                    <img src="images/svgs/earth.svg" alt="Respect de l’environnement" class="size-24 mb-4">
-                    <p class="text-sm leading-relaxed text-left">Imaginer des solutions Circulaires inspirées des meilleures pratiques au niveau de l’économie Durable
-                    </br> <span class="font-bold">0 déchet 0 émission CO2</span></p>
+                    <img src="images/svgs/earth.svg" alt="Respect de l’environnement" class="size-32 mb-4">
+                    <p class="font-normal text-[16px] leading-[29px] tracking-normal text-left">Imaginer des solutions Circulaires inspirées des
+                        meilleures pratiques au niveau de l’économie Durable
+                        </br> <span class="font-bold">0 déchet 0 émission CO2</span></p>
                 </div>
 
                 <!-- Value 2 -->
                 <div class="flex flex-col items-start px-4">
-                    <img src="images/svgs/cloud.svg" alt="Innovation industrielle" class="size-24 mb-4">
-                    <p class="text-sm leading-relaxed text-left">Concevoir des équipements industriels avec une longue durée de vie </p>
+                    <img src="images/svgs/cloud.svg" alt="Innovation industrielle" class="size-32 mb-4">
+                    <p class="font-normal text-[16px] leading-[29px] tracking-normal text-left">Concevoir des équipements industriels avec une longue
+                        durée de vie </p>
                 </div>
 
                 <!-- Value 3 -->
                 <div class="flex flex-col items-start px-4">
-                    <img src="images/svgs/recycle.svg" alt="Économie circulaire" class="size-24 mb-4">
-                    <p class="text-sm leading-relaxed text-left">Intégrer le bien-être des communautés de nos clients et préserver l’environnement <span class="font-bold">Valorisation des déchets et leur recyclage</span></p>
+                    <img src="images/svgs/recycle.svg" alt="Économie circulaire" class="size-32 mb-4">
+                    <p class="font-normal text-[16px] leading-[29px] tracking-normal text-left">Intégrer le bien-être des communautés de nos clients et
+                        préserver l’environnement <span class="font-bold">Valorisation des déchets et leur
+                            recyclage</span></p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="metiers" class="py-20 px-6 bg-[#f4fdfa]">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-semibold text-green-700 mb-16">Nos métiers</h2>
+    <section id="metiers" class="pt-[170px] pb-[100px] px-6 bg-[#f4fdfa]">
+        <div class="max-w-[1350px] ms-[350px] flex flex-col">
+            <h2 class="font-bold text-[28px] leading-[74px] tracking-[0.1em] text-green-700 mb-20 text-left">Nos métiers</h2>
 
             <!-- Image Grid Layout -->
-            <div class="flex flex-col gap-6">
+            <div class="flex flex-col gap-6 max-w-6xl w-6xl self-end">
 
                 <!-- Left Column (2 rows) -->
                 <div class="flex w-full gap-6 max-h-[350px]">
@@ -301,22 +287,23 @@
         </div>
     </section>
 
-    <section id="produits" class="py-20 px-6 bg-white">
-        <div class="max-w-6xl mx-auto">
+    <section id="produits" class="pt-[120px] pb-[100px] px-6 bg-white">
+        <div class="max-w-[1350px] ms-[350px] flex flex-col">
             <!-- Title -->
-            <h2 class="text-3xl font-semibold text-green-700 mb-16">Nos produits</h2>
+            <h2 class="font-bold text-[28px] leading-[74px] tracking-[0.1em] text-green-700 mb-20 text-left">Nos produits</h2>
 
             <!-- Image row -->
-            <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-8 max-w-6xl w-6xl self-end">
 
                 <!-- Product 1 -->
-                <div class="bg-[#F1F8F4] p-4 hover:shadow-md w-96 flex justify-center align-center h-64">
-                    <img src="images/produit-1.png" alt="Cuiseur écologique"
-                        class="w-full max-w-xs h-auto object-contain">
+                <div class="bg-[#F1F8F4] p-4 hover:shadow-md w-[600px] flex justify-center align-center h-[400px]">
+                    <a href="product v1.html">
+                        <img src="images/produit-1.png" alt="Cuiseur écologique" class="w-full max-w-lg h-auto object-contain">
+                    </a>
                 </div>
 
                 <!-- Product 2 -->
-                <div class="bg-[#F1F8F4] p-4 hover:shadow-md w-96 flex justify-center align-center h-64">
+                <div class="bg-[#F1F8F4] p-4 hover:shadow-md w-[600px] flex justify-center align-center h-[400px]">
                     <img src="images/produit-2.png" alt="Kit biogaz toilette"
                         class="w-full max-w-xs h-auto object-contain">
                 </div>
@@ -325,20 +312,20 @@
         </div>
     </section>
 
-    <section id="contact" class="py-20 px-6 bg-[#f4fdfa]">
-        <div class="max-w-6xl mx-auto">
+    <section id="contact" class="pt-[120px] pb-[100px] px-6 bg-[#f4fdfa]">
+        <div class="max-w-[1350px] ms-[350px] flex flex-col">
 
-            <h2 class="text-3xl font-semibold text-green-700 mb-16">Contact</h2>
-            <div class="centred w-2/3 m-auto">
-                <div class="text-3xl w-full leading-[48px] text-[#2F4858] tracking-wider mb-20">
+            <h2 class="font-bold text-[28px] leading-[74px] tracking-[0.1em] text-green-700 mb-16 text-left">Contact</h2>
+            <div class="centred max-w-6xl w-6xl self-end">
+                <div class="w-2/3 font-semibold text-[28px] leading-[42px] tracking-[0.2em] text-[#2F4858] mb-20">
                     Une question ou un projet ? Écrivez-nous, notre équipe vous accompagne vers des solutions durables
                     et
                     personnalisées.
                 </div>
-                <div class="md:flex md:space-x-12 items-center">
+                <div class="md:flex md:space-x-12 items-center gap-12">
 
                     <!-- Left: Form -->
-                    <form class="flex-1 space-y-6">
+                    <form class="flex-1 space-y-8">
                         <input type="text" placeholder="Nom complet"
                             class="w-full border-b border-gray-600 bg-transparent focus:outline-none focus:border-green-600 py-2" />
 
@@ -349,7 +336,7 @@
                             class="w-full border-b border-gray-600 bg-transparent focus:outline-none focus:border-green-600 py-2" />
 
                         <textarea placeholder="Message" rows="4"
-                            class="w-full border-b border-gray-600 bg-transparent focus:outline-none focus:border-green-600 py-2 resize-none"></textarea>
+                            class="w-full border-b border-gray-600 h-[175px] bg-transparent focus:outline-none focus:border-green-600 py-2 resize-none"></textarea>
 
                         <button type="submit"
                             class="mt-2 text-green-800 font-semibold hover:underline focus:outline-none">
@@ -374,11 +361,11 @@
         </div>
     </section>
 
-    <footer class="bg-[#2d4853] py-10">
+    <footer class="bg-[#2d4853] py-16">
         <div class="max-w-6xl mx-auto text-center">
 
             <!-- Social Icons -->
-            <div class="flex justify-center items-center space-x-6 mb-4 text-lime-400 text-xl">
+            <div class="flex justify-center items-center space-x-20 mb-4 text-lime-400 text-xl">
                 <a href="#" aria-label="Facebook" class="hover:text-white transition">
                     <i class="fab fa-facebook-f"></i>
                 </a>
@@ -433,15 +420,12 @@
         });
 
         new Swiper(".visionSwiper", {
-            slidesPerView: 2,
+            slidesPerView: 1.2,
             spaceBetween: 10,
             loop: true,
             autoplay: {
                 delay: 10000,
                 disableOnInteraction: false,
-            },
-            breakpoints: {
-                640: { slidesPerView: 1 }
             },
             pagination: {
                 el: ".swiper-pagination",
@@ -450,7 +434,6 @@
                     return `<span class="${className} w-24 bg-lime-400 h-4 relative overflow-hidden rounded-none"></span>`;
                 }
             },
-
         });
     </script>
 </body>
