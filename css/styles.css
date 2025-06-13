@@ -12,11 +12,11 @@ body {
 .visionSwiper {
   padding-bottom: 4rem !important;
   margin-left: 0 !important;
-  margin-right: 0 !important
+  margin-right: 0 !important;
 }
 
 .swiper-pagination {
-  bottom: 0 !important;
+  bottom: 0rem !important;
 }
 
 .swiper-pagination-bullet {
@@ -24,7 +24,7 @@ body {
   height: 6px !important;
   border-radius: 0% !important;
   background-color: #2d4853 !important;
-  opacity: 0 !important;
+  opacity: 1 !important;
 }
 
 .swiper-pagination-bullet-active {
@@ -43,4 +43,4 @@ body {
 @keyframes bounceUp {
     0% {transform: 'translateY(100%)'}
     100% {transform: 'translateY(0%)'}
-  };
+}

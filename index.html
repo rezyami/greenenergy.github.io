@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="src/output.css">
     <link rel="stylesheet" href="build.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -30,16 +30,17 @@
 
 <body class="bg-white text-gray-800 Montserrat">
 
-    <header class="absolute top-0 w-full z-30 bg-transparent text-white px-6">
-        <div class="flex items-center justify-around">
+    <header id="main-header"
+        class="fixed top-0 left-0 w-full z-50 px-4 sm:px-6 text-white transition-all duration-300 bg-transparent">
+        <div class="max-w-7xl mx-auto flex items-center justify-end">
             <!-- Logo -->
-            <div class="flex items-center space-x-2">
+            <div class="absolute top-0 flex left-[15%] items-center space-x-2">
                 <img src="images/logoGE.png" alt="GE2IS Logo" class="bg-transparent w-32 h-auto">
                 <span class="font-bold text-white text-5xl">GE2IS</span>
             </div>
 
             <!-- Desktop Nav -->
-            <nav class="hidden md:flex space-x-10 text-lg text-white font-medium">
+            <nav class="hidden md:flex space-x-10 text-lg text-white font-medium py-[34px]">
                 <a href="#apropos" class="hover:text-green-600">À propos</a>
                 <a href="#vision" class="hover:text-green-600">Notre Vision</a>
                 <a href="#valeurs" class="hover:text-green-600">Nos Valeurs</a>
@@ -49,7 +50,7 @@
             </nav>
 
             <!-- Hamburger Toggle -->
-            <button id="menu-toggle" class="md:hidden text-green-700 focus:outline-none">
+            <button id="menu-toggle" class="md:hidden text-green-700 p-2 transition">
                 <!-- Hamburger icon -->
                 <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 block" fill="none"
                     viewBox="0 0 24 24" stroke="currentColor">
@@ -89,7 +90,9 @@
                     style="background-image: url('images/slide-1.jpg');">
                     <div class="absolute inset-0 bg-black/30"></div>
                     <div class="absolute inset-0 flex flex-col justify-center items-start px-10 md:px-24 z-10">
-                        <h1 class="text-white font-bold text-[70px] leading-[74px] tracking-normal w-96 ml-[300px] mb-6">Bâtissons<br>un avenir durable</h1>
+                        <h1
+                            class="text-white font-bold text-[70px] leading-[74px] tracking-normal w-fit ml-[300px] mb-6">
+                            Bâtissons<br>un avenir durable</h1>
                     </div>
                 </div>
                 <!-- Slide -->
@@ -97,7 +100,9 @@
                     style="background-image: url('images/slide-2.jpg');">
                     <div class="absolute inset-0 bg-black/30"></div>
                     <div class="absolute inset-0 flex flex-col justify-center items-start px-10 md:px-24 z-10">
-                        <h1 class="text-white font-bold text-[70px] leading-[74px] tracking-normal w-96 ml-[300px] mb-6">Bâtissons<br>un avenir durable</h1>
+                        <h1
+                            class="text-white font-bold text-[70px] leading-[74px] tracking-normal w-fit ml-[300px] mb-6">
+                            0 émission CO2 </br> 100% durable</h1>
                     </div>
 
                     <!-- Scroll Indicator -->
@@ -112,7 +117,11 @@
                     style="background-image: url('images/slide-3.jpg');">
                     <div class="absolute inset-0 bg-black/30"></div>
                     <div class="absolute inset-0 flex flex-col justify-center items-start px-10 md:px-24 z-10">
-                        <h1 class="text-white font-bold text-[70px] leading-[74px] tracking-normal w-96 ml-[300px] mb-6">Bâtissons<br>un avenir durable</h1>
+                        <h1
+                            class="text-white font-bold text-[70px] leading-[74px] tracking-normal w-fit ml-[300px] mb-6">
+                            Solutions
+                            </br>industrielles
+                            </br>vertes
                     </div>
                 </div>
             </div>
@@ -128,9 +137,12 @@
 
         <!-- Bottom CTA -->
         <!-- Scroll Indicator -->
-        <div class="absolute -bottom-8 left-[23%] transform -translate-x-1/2 z-10 w-[60px] h-[80px] rounded-[30px] bg-white p-[10px]">
+        <div
+            class="absolute -bottom-8 left-[23%] transform -translate-x-1/2 z-10 w-[60px] h-[80px] rounded-[30px] bg-white p-[10px]">
             <div class="w-full h-full rounded-[30px] border-3 border-[#B3D558] flex justify-center items-start p-1">
-                <div class="size-[10px] bg-[#B3D558] animate__animated animate__slideInUp animate__delay-2s animate__infinite rounded-full"></div>
+                <div
+                    class="size-[10px] bg-[#B3D558] animate__animated animate__slideInUp animate__delay-2s animate__infinite rounded-full">
+                </div>
             </div>
         </div>
         <div
@@ -140,7 +152,8 @@
                 <img src="images/svgs/cuisson.svg" alt="Stove Icon" class="size-24 mr-12">
                 <div class="text-2xl w-3/5">
                     <p class="font-bold">Un projet de cuisson éco-responsable ?</p>
-                    <p class="text-[22px] leading-[72px] flex">Voir nos produits <img src="images/svgs/greater-then.svg" class="ms-4" alt=""></p>
+                    <p class="text-[22px] leading-[72px] flex">Voir nos produits <img src="images/svgs/greater-then.svg"
+                            class="ms-4" alt=""></p>
                 </div>
             </a>
             <a href="#contact"
@@ -148,13 +161,14 @@
                 <img src="images/svgs/contact.svg" alt="Contact Icon" class="size-24 mr-12">
                 <div class="text-2xl w-3/5">
                     <p class="font-bold">Vous avez des questions ou un projet en tête ?</p>
-                    <p class="text-[22px] leading-[72px] flex">Nous contacter <img src="images/svgs/greater-then.svg" class="ms-4" alt=""></p>
+                    <p class="text-[22px] leading-[72px] flex">Nous contacter <img src="images/svgs/greater-then.svg"
+                            class="ms-4" alt=""></p>
                 </div>
             </a>
         </div>
     </section>
     <section id="apropos" class="bg-white pt-[250px] pb-[100px]">
-        <div class="max-w-[1350px] ms-[350px] flex flex-col">
+        <div class="max-w-[1350px] lg:ms-[20%] flex flex-col">
             <h2 class="font-bold text-[28px] leading-[74px] tracking-[0.1em] text-green-700 mb-20">À propos</h2>
 
             <!-- Intro text -->
@@ -168,13 +182,24 @@
             <!-- Bullet list in two columns -->
             <div class="max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8 text-gray-700 self-end">
                 <ul class="space-x-6 list-disc list-outside marker:text-[#B3D558]">
-                    <li class="font-normal text-[16px] leading-[29px] tracking-normal mb-6">Le développement et commercialisation de produits et de services industriels.</li>
-                    <li class="font-normal text-[16px] leading-[29px] tracking-normal mb-6">La production, la commercialisation ainsi que la distribution d'équipements et de machines de projets industriels majeurs dans divers secteurs d'activité.</li>
-                    <li class="font-normal text-[16px] leading-[29px] tracking-normal mb-6">La valorisation industrielle des déchets; le développement et l'exploitation de toutes autres activités liées au développement durable en général.</li>
+                    <li class="font-normal text-[16px] leading-[29px] tracking-normal mb-6">Le développement et
+                        commercialisation de produits et de services industriels.</li>
+                    <li class="font-normal text-[16px] leading-[29px] tracking-normal mb-6">La production, la
+                        commercialisation ainsi que la distribution d'équipements et de machines de projets industriels
+                        majeurs dans divers secteurs d'activité.</li>
+                    <li class="font-normal text-[16px] leading-[29px] tracking-normal mb-6">La valorisation industrielle
+                        des déchets; le développement et l'exploitation de toutes autres activités liées au
+                        développement durable en général.</li>
                 </ul>
                 <ul class="space-x-6 list-disc list-outside marker:text-[#B3D558]">
-                    <li class="font-normal text-[16px] leading-[29px] tracking-normal mb-6">Toutes prestations de services, d’études, de conseils et au développement économique et social durable aux entreprises, administrations publique, institutions, organisations non gouvernementales et association en matière de gestion de projet.</li>
-                    <li class="font-normal text-[16px] leading-[29px] tracking-normal mb-6">L’Assistance des entreprises à l’élaboration des offres de produits et de services adaptés aux besoins du développement en respectant à la fois les contraintes économiques, les impératifs sociaux et les conditions d’un développement durable.</li>
+                    <li class="font-normal text-[16px] leading-[29px] tracking-normal mb-6">Toutes prestations de
+                        services, d’études, de conseils et au développement économique et social durable aux
+                        entreprises, administrations publique, institutions, organisations non gouvernementales et
+                        association en matière de gestion de projet.</li>
+                    <li class="font-normal text-[16px] leading-[29px] tracking-normal mb-6">L’Assistance des entreprises
+                        à l’élaboration des offres de produits et de services adaptés aux besoins du développement en
+                        respectant à la fois les contraintes économiques, les impératifs sociaux et les conditions d’un
+                        développement durable.</li>
                 </ul>
             </div>
         </div>
@@ -210,7 +235,7 @@
                             <div class="text-green-700 font-bold text-3xl self-start relative -top-16">
                                 <img src="images/02.png" alt="">
                             </div>
-                            
+
                             <p class="w-2/5 text-gray-700 font-semibold text-lg self-end">
                                 Encourager une transition vers une production durable et responsable de l’énergie au
                                 niveau
@@ -230,8 +255,9 @@
     </section>
 
     <section id="valeurs" class="pt-[120px] pb-[120px] bg-white">
-        <div class="max-w-[1350px] ms-[350px] flex flex-col text-center">
-            <h2 class="font-bold text-[28px] leading-[74px] tracking-[0.1em] text-green-700 mb-20 text-left">Nos Valeurs</h2>
+        <div class="max-w-[1350px] lg:ms-[20%] flex flex-col text-center">
+            <h2 class="font-bold text-[28px] leading-[74px] tracking-[0.1em] text-green-700 mb-20 text-left">Nos Valeurs
+            </h2>
 
             <!-- Value Blocks -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-gray-700 max-w-6xl w-6xl self-end">
@@ -239,7 +265,8 @@
                 <!-- Value 1 -->
                 <div class="flex flex-col items-start px-4">
                     <img src="images/svgs/earth.svg" alt="Respect de l’environnement" class="size-32 mb-4">
-                    <p class="font-normal text-[16px] leading-[29px] tracking-normal text-left">Imaginer des solutions Circulaires inspirées des
+                    <p class="font-normal text-[16px] leading-[29px] tracking-normal text-left">Imaginer des solutions
+                        Circulaires inspirées des
                         meilleures pratiques au niveau de l’économie Durable
                         </br> <span class="font-bold">0 déchet 0 émission CO2</span></p>
                 </div>
@@ -247,14 +274,16 @@
                 <!-- Value 2 -->
                 <div class="flex flex-col items-start px-4">
                     <img src="images/svgs/cloud.svg" alt="Innovation industrielle" class="size-32 mb-4">
-                    <p class="font-normal text-[16px] leading-[29px] tracking-normal text-left">Concevoir des équipements industriels avec une longue
+                    <p class="font-normal text-[16px] leading-[29px] tracking-normal text-left">Concevoir des
+                        équipements industriels avec une longue
                         durée de vie </p>
                 </div>
 
                 <!-- Value 3 -->
                 <div class="flex flex-col items-start px-4">
                     <img src="images/svgs/recycle.svg" alt="Économie circulaire" class="size-32 mb-4">
-                    <p class="font-normal text-[16px] leading-[29px] tracking-normal text-left">Intégrer le bien-être des communautés de nos clients et
+                    <p class="font-normal text-[16px] leading-[29px] tracking-normal text-left">Intégrer le bien-être
+                        des communautés de nos clients et
                         préserver l’environnement <span class="font-bold">Valorisation des déchets et leur
                             recyclage</span></p>
                 </div>
@@ -263,24 +292,60 @@
     </section>
 
     <section id="metiers" class="pt-[170px] pb-[100px] px-6 bg-[#f4fdfa]">
-        <div class="max-w-[1350px] ms-[350px] flex flex-col">
-            <h2 class="font-bold text-[28px] leading-[74px] tracking-[0.1em] text-green-700 mb-20 text-left">Nos métiers</h2>
+        <div class="max-w-[1350px] lg:ms-[20%] flex flex-col">
+            <h2 class="font-bold text-[28px] leading-[74px] tracking-[0.1em] text-green-700 mb-20 text-left">Nos métiers
+            </h2>
 
             <!-- Image Grid Layout -->
             <div class="flex flex-col gap-6 max-w-6xl w-6xl self-end">
 
                 <!-- Left Column (2 rows) -->
-                <div class="flex w-full gap-6 max-h-[350px]">
-                    <img src="images/metier1.jpg" alt="Unité industrielle"
-                        class="w-2/3 max-w-[710px] h-auto rounded shadow-md">
-                    <img src="images/metier2.jpg" alt="Four à bois" class="w-1/3 h-auto rounded shadow-md">
+                <div class="flex w-full gap-6 max-h-[350px] overflow-hidden">
+                    <div class="w-2/3 max-w-[710px] h-auto relative group overflow-hidden">
+                        <img src="images/metier1.jpg" alt="Unité industrielle" class="rounded shadow-md">
+                        <div
+                            class="absolute bottom-0 left-0 w-fit md:w-2/3 bg-[#2F4858] text-white p-4 transform -translate-x-full group-hover:translate-x-0 transition-all duration-500 ease-in-out">
+                            <p class="font-semibold text-[18px] leading-[28px] tracking-normal px-4 py-10">
+                                La fabrication industrielle de chaudières en Biomasse
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-1/3 h-auto relative group overflow-hidden">
+                        <img src="images/metier2.jpg" alt="Four à bois" class="h-full rounded shadow-md">
+                        <div
+                            class="absolute bottom-0 left-0 w-fit md:w-2/3 bg-[#2F4858] text-white p-4 transform -translate-x-full group-hover:translate-x-0 transition-all duration-500 ease-in-out">
+                            <p class="font-semibold text-[18px] leading-[28px] tracking-normal px-4 py-10">
+                                L’installation et la mise en fonction opérationnelle
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Right Column (2 rows) -->
                 <div class="flex w-full gap-6 max-h-[350px]">
-                    <img src="images/metier3.png" alt="Foyer à bois moderne" class="w-1/3 h-auto rounded shadow-md">
-                    <img src="images/metier4.jpg" alt="Partenariat & services"
-                        class="w-2/3 max-w-[710px] h-auto rounded shadow-md">
+                    <div class="w-1/3 h-auto relative group overflow-hidden">
+                        <img src="images/metier3.png" alt="Foyer à bois moderne"
+                            class="w-full h-full rounded shadow-md">
+                        <div
+                            class="absolute bottom-0 left-0 w-fit md:w-2/3 bg-[#2F4858] text-white p-4 transform -translate-x-full group-hover:translate-x-0 transition-all duration-500 ease-in-out">
+                            <p class="font-semibold text-[18px] leading-[28px] tracking-normal px-4 py-10">
+                                La maintenance, la gestion à distance et/ou de proximité et le suivi
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-2/3 max-w-[710px] h-auto relative group overflow-hidden">
+                        <img src="images/metier4.jpg" alt="Partenariat & services"
+                            class="w-full h-auto rounded shadow-md">
+
+                        <div
+                            class="absolute bottom-0 left-0 w-full md:w-2/3 bg-[#2F4858] text-white p-4 transform -translate-x-full group-hover:translate-x-0 transition-all duration-500 ease-in-out">
+                            <p class="font-semibold text-[18px] leading-[28px] tracking-normal px-4 py-10">
+                                Le conseil en amont et aval de nos clients : Diagnostic énergétique, Evaluation des
+                                besoins, Offre de solutions de Mix Energétique( Bio Masse et Photovoltaïque), Etude
+                                économique, Montage financier, Accompagnement dans le temps et Pilotage des performances
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -288,24 +353,47 @@
     </section>
 
     <section id="produits" class="pt-[120px] pb-[100px] px-6 bg-white">
-        <div class="max-w-[1350px] ms-[350px] flex flex-col">
+        <div class="max-w-[1350px] lg:ms-[20%] flex flex-col">
             <!-- Title -->
-            <h2 class="font-bold text-[28px] leading-[74px] tracking-[0.1em] text-green-700 mb-20 text-left">Nos produits</h2>
+            <h2 class="font-bold text-[28px] leading-[74px] tracking-[0.1em] text-green-700 mb-20 text-left">Nos
+                produits</h2>
 
             <!-- Image row -->
             <div class="flex flex-col md:flex-row items-center justify-center gap-8 max-w-6xl w-6xl self-end">
 
                 <!-- Product 1 -->
-                <div class="bg-[#F1F8F4] p-4 hover:shadow-md w-[600px] flex justify-center align-center h-[400px]">
-                    <a href="product v1.html">
-                        <img src="images/produit-1.png" alt="Cuiseur écologique" class="w-full max-w-lg h-auto object-contain">
+                <div
+                    class="relative bg-[#F1F8F4] hover:shadow-md w-[600px] flex justify-center items-center h-[400px] overflow-hidden group rounded-md">
+                    <a href="product v1.html" class="relative w-full h-full p-4">
+                        <img src="images/produit-1.png" alt="Cuiseur écologique"
+                            class="w-full h-full object-contain z-0">
+
+                        <!-- Green overlay on hover -->
+                        <div
+                            class="absolute inset-0 bg-[#2F485875] opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 flex items-center justify-center">
+                            <p class="font-extrabold text-[28px] leading-[42px] tracking-normal text-center text-white">
+                                Cuisinière à bois Balkan </br>
+                                Energy 4014, 7.9kW</p>
+                        </div>
                     </a>
                 </div>
 
+
                 <!-- Product 2 -->
-                <div class="bg-[#F1F8F4] p-4 hover:shadow-md w-[600px] flex justify-center align-center h-[400px]">
-                    <img src="images/produit-2.png" alt="Kit biogaz toilette"
-                        class="w-full max-w-xs h-auto object-contain">
+                <div
+                    class="relative bg-[#F1F8F4] hover:shadow-md w-[600px] flex justify-center items-center h-[400px] overflow-hidden group rounded-md">
+                    <a href="product v1.html" class="relative w-full h-full p-4">
+                        <img src="images/produit-2.png" alt="Cuiseur écologique"
+                            class="w-full h-full object-contain z-0">
+
+                        <!-- Green overlay on hover -->
+                        <div
+                            class="absolute inset-0 bg-[#2F485875] opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 flex items-center justify-center h-full">
+                            <p class="font-extrabold text-[28px] leading-[42px] tracking-normal text-center text-white">
+                                Cuisinière à bois Balkan</br>
+                                Energy 4014, 7.9kW</p>
+                        </div>
+                    </a>
                 </div>
 
             </div>
@@ -313,9 +401,10 @@
     </section>
 
     <section id="contact" class="pt-[120px] pb-[100px] px-6 bg-[#f4fdfa]">
-        <div class="max-w-[1350px] ms-[350px] flex flex-col">
+        <div class="max-w-[1350px] lg:ms-[20%] flex flex-col">
 
-            <h2 class="font-bold text-[28px] leading-[74px] tracking-[0.1em] text-green-700 mb-16 text-left">Contact</h2>
+            <h2 class="font-bold text-[28px] leading-[74px] tracking-[0.1em] text-green-700 mb-16 text-left">Contact
+            </h2>
             <div class="centred max-w-6xl w-6xl self-end">
                 <div class="w-2/3 font-semibold text-[28px] leading-[42px] tracking-[0.2em] text-[#2F4858] mb-20">
                     Une question ou un projet ? Écrivez-nous, notre équipe vous accompagne vers des solutions durables
@@ -418,11 +507,18 @@
             iconOpen.classList.remove('hidden');
             iconClose.classList.add('hidden');
         });
+        document.getElementById("menu-toggle").addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+            backdrop.classList.toggle("hidden");
+            iconOpen.classList.toggle("hidden");
+            iconClose.classList.toggle("hidden");
+            document.body.classList.toggle("overflow-hidden");
+        });
 
         new Swiper(".visionSwiper", {
             slidesPerView: 1.2,
             spaceBetween: 10,
-            loop: true,
+            loop: false,
             autoplay: {
                 delay: 10000,
                 disableOnInteraction: false,
@@ -434,6 +530,17 @@
                     return `<span class="${className} w-24 bg-lime-400 h-4 relative overflow-hidden rounded-none"></span>`;
                 }
             },
+        });
+        const header = document.getElementById("main-header");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 50) {
+                header.classList.add("backdrop-blur-md", "bg-[#2F4858]/70", "text-gray-800", "shadow-md");
+                header.classList.remove("text-white", "bg-transparent");
+            } else {
+                header.classList.remove("backdrop-blur-md", "bg-[#2F4858]/70", "text-gray-800", "shadow-md");
+                header.classList.add("text-white", "bg-transparent");
+            }
         });
     </script>
 </body>

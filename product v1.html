@@ -17,7 +17,7 @@
 
 <body class="bg-white text-gray-800 Montserrat">
 
-    <header class="bg-[#2d4853] px-6">
+    <header class="bg-[#2d4853] px-6 z-50">
         <div class="flex items-center justify-around">
             <!-- Logo -->
             <div class="flex items-center space-x-2">
@@ -27,12 +27,12 @@
 
             <!-- Desktop Nav -->
             <nav class="hidden md:flex space-x-10 text-lg text-white font-medium py-[34px]">
-                <a href="#apropos" class="hover:text-green-600">À propos</a>
-                <a href="#vision" class="hover:text-green-600">Notre Vision</a>
-                <a href="#valeurs" class="hover:text-green-600">Nos Valeurs</a>
-                <a href="#metiers" class="hover:text-green-600">Nos métiers</a>
-                <a href="#produits" class="hover:text-green-600">Nos produits</a>
-                <a href="#contact" class="hover:text-green-600">Contact</a>
+                <a href="index.html#apropos" class="hover:text-green-600">À propos</a>
+                <a href="index.html#vision" class="hover:text-green-600">Notre Vision</a>
+                <a href="index.html#valeurs" class="hover:text-green-600">Nos Valeurs</a>
+                <a href="index.html#metiers" class="hover:text-green-600">Nos métiers</a>
+                <a href="index.html#produits" class="hover:text-green-600">Nos produits</a>
+                <a href="index.html#contact" class="hover:text-green-600">Contact</a>
             </nav>
 
             <!-- Hamburger Toggle -->
@@ -65,8 +65,10 @@
     </header>
 
     <!-- Breadcrumb -->
-    <div class="h-[160px] py-3 px-6 bg-[url(../images/bg-breadcrumb.jpg)] bg-cover items-center flex">
-        <div class="max-w-6xl mx-auto text-center flex justify-center">
+    <div class="relative h-[160px] py-3 px-6 bg-[url(../images/bg-breadcrumb.jpg)] bg-cover items-center flex">
+        <!-- Green overlay -->
+        <div class="absolute inset-0 bg-[#077B0180] mix-blend-multiply"></div>
+        <div class="max-w-6xl mx-auto text-center flex justify-center z-49">
             <p class="text-white align-center font-semibold text-[18px] leading-[74px] tracking-normal gap-10 flex">
                 <a href="#" class="hover:text-green-600">Accueil</a> /
                 <a href="#produits" class="hover:text-green-600">Produits</a> /
@@ -143,7 +145,8 @@
                         <div class="w-full max-w-3xl text-left">
 
                             <!-- Header Section -->
-                            <h1 class="text-[#2F4858] font-extrabold text-[28px] leading-[42px] tracking-normal mb-4 border-b border-gray-200 pb-6">
+                            <h1
+                                class="text-[#2F4858] font-extrabold text-[28px] leading-[42px] tracking-normal mb-4 border-b border-gray-200 pb-6">
                                 Cuisinière à bois Balkan Energy 4014, 7.9kW</h1>
                             <p class="text-[#2F4858] font-semibold mb-4">Cuisinière à bois avec grand four</p>
 
@@ -153,17 +156,21 @@
                                 <!--  Column (Energy Class, Heating Area) -->
                                 <div class="flex gap-10">
                                     <div class="flex">
-                                        <img src="images/energy-class-icon-1-50x50 1.png"  class="size-12" alt="">
+                                        <img src="images/energy-class-icon-1-50x50 1.png" class="size-12" alt="">
                                         <div>
-                                            <span class="ml-2 text-xsfont-semibold text-[14px] leading-[29px] tracking-normal text-[#C2C2C2] text-nowrap">Classe d'efficacité énergétique</span>
+                                            <span
+                                                class="ml-2 text-xsfont-semibold text-[14px] leading-[29px] tracking-normal text-[#C2C2C2] text-nowrap">Classe
+                                                d'efficacité énergétique</span>
                                             <img src="images/energyClass.png" alt="">
                                         </div>
-                                        
+
                                     </div>
                                     <div class="flex items-center">
                                         <img src="images/mSquare.png" class="size-12 me-4" alt="">
                                         <div class="flex flex-col">
-                                            <span class="ml-2 text-xsfont-semibold text-[14px] leading-[29px] tracking-normal text-[#C2C2C2] text-nowrap">Surface de chauffage approximative (m²)</span>
+                                            <span
+                                                class="ml-2 text-xsfont-semibold text-[14px] leading-[29px] tracking-normal text-[#C2C2C2] text-nowrap">Surface
+                                                de chauffage approximative (m²)</span>
                                             <span class="text-xl font-bold text-[#009960]">30 à 50</span>
                                         </div>
                                     </div>
@@ -174,7 +181,8 @@
                                     <h2 class="text-2xl font-semibold text-gray-800">Détails du produit</h2>
                                     <ul class="list-disc pl-6 space-y-2 text-gray-700">
                                         <li>Corps en tôle d'acier</li>
-                                        <li>Chambre de combustion doublée de briques réfractaires qui accumulent la chaleur et augmentent la température de combustion;</li>
+                                        <li>Chambre de combustion doublée de briques réfractaires qui accumulent la
+                                            chaleur et augmentent la température de combustion;</li>
                                         <li>Grille en fonte</li>
                                         <li>Amortisseur avant pour contrôler l'alimentation en air</li>
                                         <li>Volet d'air secondaire qui augmente la température de combustion,
@@ -185,7 +193,7 @@
 
                                     <p class="mb-4">L'obtention de la puissance calorifique souhaitée dépend de :</p>
                                     <ul class="list-disc pl-6 space-y-2 text-gray-700">
-                                        
+
                                         <li>Le carburant sélectionné ainsi que la caloricité et l'humidité nécessaires
                                         </li>
                                         <li>son allumage et son ravitaillement ultérieurs;</li>
@@ -210,71 +218,71 @@
                         </div>
                     </div>
                     <!-- Product Characteristics (Table) -->
-                    <div class="py-6 rounded-lg shadow-md">
+                    <div class="py-6 rounded-lg">
                         <h3 class="text-2xl font-semibold text-green-700 mb-4">Caractéristiques</h3>
-                        <table class="min-w-full table-auto border-collapse text-gray-700">
+                        <table class="min-w-full table-auto border-collapse text-gray-700 border border-[#E2E2E2]">
                             <tbody>
-                                <tr class="border-b">
+                                <tr class="odd:bg-white even:bg-[#FAFAFA]">
                                     <td class="px-4 py-3">Poids (kg)</td>
                                     <td class="px-4 py-3">45.00</td>
                                 </tr>
-                                <tr class="border-b">
+                                <tr class="odd:bg-white even:bg-[#FAFAFA]">
                                     <td class="px-4 py-3">Profondeur (mm)</td>
                                     <td class="px-4 py-3">490</td>
                                 </tr>
-                                <tr class="border-b">
+                                <tr class="odd:bg-white even:bg-[#FAFAFA]">
                                     <td class="px-4 py-3">Largeur (mm)</td>
                                     <td class="px-4 py-3">835</td>
                                 </tr>
-                                <tr class="border-b">
+                                <tr class="odd:bg-white even:bg-[#FAFAFA]">
                                     <td class="px-4 py-3">Hauteur (mm)</td>
                                     <td class="px-4 py-3">700</td>
                                 </tr>
-                                <tr class="border-b">
+                                <tr class="odd:bg-white even:bg-[#FAFAFA]">
                                     <td class="px-4 py-3">Puissance thermique nominale (kW)</td>
                                     <td class="px-4 py-3">7.9</td>
                                 </tr>
-                                <tr class="border-b">
+                                <tr class="odd:bg-white even:bg-[#FAFAFA]">
                                     <td class="px-4 py-3">Classe d’efficacité énergétique</td>
                                     <td class="px-4 py-3">A+</td>
                                 </tr>
-                                <tr class="border-b">
+                                <tr class="odd:bg-white even:bg-[#FAFAFA]">
                                     <td class="px-4 py-3">Surface de chauffage approximative (m²)</td>
                                     <td class="px-4 py-3">30 à 50</td>
                                 </tr>
-                                <tr class="border-b">
+                                <tr class="odd:bg-white even:bg-[#FAFAFA]">
                                     <td class="px-4 py-3">Conduit (mm)</td>
                                     <td class="px-4 py-3">150</td>
                                 </tr>
-                                <tr class="border-b">
+                                <tr class="odd:bg-white even:bg-[#FAFAFA]">
                                     <td class="px-4 py-3">Puissance de sortie de chaleur (kW)</td>
                                     <td class="px-4 py-3">7.9</td>
                                 </tr>
-                                <tr class="border-b">
+                                <tr class="odd:bg-white even:bg-[#FAFAFA]">
                                     <td class="px-4 py-3">Efficacité (%)</td>
                                     <td class="px-4 py-3">81.45</td>
                                 </tr>
-                                <tr class="border-b">
+                                <tr class="odd:bg-white even:bg-[#FAFAFA]">
                                     <td class="px-4 py-3">Type de chauffage</td>
                                     <td class="px-4 py-3">Convection naturelle</td>
                                 </tr>
-                                <tr class="border-b">
+                                <tr class="odd:bg-white even:bg-[#FAFAFA]">
                                     <td class="px-4 py-3">Caractéristiques</td>
                                     <td class="px-4 py-3">Poêle à bois, Poêle, Four, Pieds</td>
                                 </tr>
-                                <tr class="border-b">
+                                <tr class="odd:bg-white even:bg-[#FAFAFA]">
                                     <td class="px-4 py-3">Type de chauffage</td>
                                     <td class="px-4 py-3">Convection naturelle</td>
                                 </tr>
-                                <tr class="border-b">
+                                <tr class="odd:bg-white even:bg-[#FAFAFA]">
                                     <td class="px-4 py-3">Dimensions du four (H, L et P) en mm</td>
                                     <td class="px-4 py-3">174x400x415</td>
                                 </tr>
-                                <tr class="border-b">
+                                <tr class="odd:bg-white even:bg-[#FAFAFA]">
                                     <td class="px-4 py-3">Doublure</td>
                                     <td class="px-4 py-3">Aucune</td>
                                 </tr>
-                                <tr class="border-b">
+                                <tr class="odd:bg-white even:bg-[#FAFAFA]">
                                     <td class="px-4 py-3">Placement</td>
                                     <td class="px-4 py-3">Centre</td>
                                 </tr>
